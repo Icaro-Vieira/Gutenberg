@@ -1,0 +1,81 @@
+/* ========== Header Line ========== */
+.sub-header {
+    background: var(--gradient);
+    height: 5px;
+}
+
+/* ========== Book Information ========== */
+.container-information {
+    padding: 0 35px;
+    height: calc(100vh - 95px);
+   
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    padding-right: 60px;
+    width: 300px;
+    height: 450px;
+}
+
+.img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.9rem;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.information > button {
+    margin-top: 40px;
+    width: 200px;
+    height: 40px;
+
+    background: var(--color-button);
+    border: none;
+    color: var(--white);
+
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.information > button:hover {
+    transition: 250ms;
+    background: var(--hover);
+}
+
+/* ========== RESPONSIVITY ========== */
+
+@media screen and (max-width: 400px) {
+    .container-information {
+        margin-top: 100px;
+    }
+
+    .card {
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .img {
+        margin-bottom: 20px;
+        padding-right: 0;
+    }
+
+    .information > button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

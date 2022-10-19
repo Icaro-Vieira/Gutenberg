@@ -1,0 +1,203 @@
+/* ========== Header e Nav ========== */
+header {
+    height: 85px;
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: var(--white);
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    display: flex;
+}
+
+.li {
+    padding: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--hover);
+}
+
+.li-inative {
+    padding: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.li, .li-inative:hover {
+    color: var(--hover);
+    cursor: pointer;
+}
+
+/* ========== Gradient e Input ========== */
+
+.container-banner {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gradient);
+}
+
+.banner {
+    width: 70rem;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner > span {
+    max-width: 750px;
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.banner > p {
+    max-width: 750px;
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container-input {
+    background: var(--white);
+    width: 70%;
+    height: 55px;
+    border-radius: 0.9rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+
+    box-shadow: var(--shadow);
+}
+
+.container-input > input {
+    background: var(--white);
+    width: 95%;
+    height: 95%;
+
+    border: none;
+    outline: none;
+
+    color: #636363;
+}
+
+.container-input > button {
+    height: 95%;
+    background: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+/* ========== Content Section ========== */
+.header-content {
+    padding: 30px 35px;
+    height: 60px;
+
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container-content {
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-book {
+    margin-bottom: 20px;
+    margin-right: 30px;
+    width: 200px;
+    height: auto;
+
+    border-radius: 0.9rem;
+    box-shadow: var(--shadow);
+
+    transition: transform 250ms;
+}
+
+.card-book > span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-book > p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.card-book:hover {
+    transform: translateY(-10px);
+    color: var(--hover);
+    cursor: pointer;
+}
+
+.container-image {
+    width: 100%;
+}
+
+.container-image > img {
+    width: 200px;    
+    height: 300px;
+    border-radius: 0.9rem 0.9rem 0rem 0rem;
+}
+
+
+/* ========== RESPONSIVITY ========== */
+
+@media screen and (max-width: 400px) {
+    .container-content {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .card-book {
+        margin-right: 0;
+    }
+
+    .li, .li-inative {
+        padding: 16px;
+        font-size: 18px;
+    }
+
+    .banner > span {
+        font-size: 20px;
+        max-width: 95%;
+    }
+
+    .banner > p {
+        font-size: 20px;
+    }
+}

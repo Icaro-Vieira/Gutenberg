@@ -1,0 +1,17 @@
+/* ========== FONTES ========== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --white: #FFFAFA;
+    --gradient: linear-gradient(90deg, #2d6cea, #2eaade);
+    --black: #000;
+    --hover: #2eaade;
+    --shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.09);
+    --color-button: #2d6cea;
+}
